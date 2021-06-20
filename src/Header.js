@@ -14,7 +14,6 @@ class Header extends React.Component {
           <Navbar.Brand>My Favorite Books</Navbar.Brand>
           <Link to="/">Home</Link>
           <Link to="/Profile">Profile</Link>
-          {/* TODO: if the user is logged in, render the `LogoutButton` - if the user is logged out, render the `LoginButton` */}
           {
             isAuthenticated ? <Link to="/Logout">Logout</Link> : <Link to="/Login">Login</Link>
           }
